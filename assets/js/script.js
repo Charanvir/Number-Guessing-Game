@@ -1,6 +1,13 @@
 const startButton = document.querySelector("button")
+const h1 = document.querySelector('h1')
+
 
 startButton.addEventListener("click", () => {
+    const newText = game();
+    h1.innerText = newText;
+})
+
+const game = () => {
     let maximum = parseInt(prompt("Enter A Maximum Number"));
     while (!maximum) {
         maximum = parseInt(prompt("Enter A Valid Number"));
@@ -27,9 +34,9 @@ startButton.addEventListener("click", () => {
     if (guess === "quit") {
         prompt("You have Quit")
     } else {
-        prompt(`Congrats, you are Correct! It took you ${attempts} guesses`);
+        return `Congrats, you are Correct! It took you ${attempts} guesses`;
     }
-})
+}
 
 
 
