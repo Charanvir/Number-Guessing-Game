@@ -5,14 +5,14 @@
     
 }
 
-.buttonClass {
+.startButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.buttonClass button {
+.startButton button {
     height: 75;
     width: 150;
     font-size: 20px;
@@ -33,4 +33,19 @@ button:hover {
 .winningImage img {
     width: 500px;
     height: 500px;
+}
+
+.resetButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.resetButton button {
+    height: 75;
+    width: 150;
+    font-size: 20px;
+    color: white;
+    background-color: red;
 }
